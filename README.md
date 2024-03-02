@@ -22,10 +22,10 @@ Replace `{https://myapi.vercel.com}`, `{title}`, `{year}`, `{seasonNumber}`, and
 
 You can customize the behavior of the API by modifying the `utils.py` file:
 
-- `language_code`: Change this to the desired [ISO 639-2 language code]([www.google.com](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes)) for the subtitles.
+- `language_code`: Change this to the desired [ISO 639-2 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes) for the subtitles.
 - `subtitles_number`: Change this to the number of subtitles you want the API to fetch.
 - `subtitle_name`: Change this to customize the `lang` key that will appear in the JSON response.
 
 ## License
 
-([MIT](https://github.com/tiagosilvadeveloper/opensubtitles-scrapper/blob/main/LICENSE))
+[MIT](https://github.com/tiagosilvadeveloper/opensubtitles-scrapper/blob/main/LICENSE)

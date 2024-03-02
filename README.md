@@ -9,8 +9,7 @@ This repository contains a Python script for scraping subtitles from OpenSubtitl
 
 ## Usage
 
-Deploy this repository on Vercel. 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftiagosilvadeveloper%2Fopensubtitles-scrapper)
+Deploy this repository directly on Vercel by clicking here: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftiagosilvadeveloper%2Fopensubtitles-scrapper)
 
 Once deployed, you can use the following endpoints:
 

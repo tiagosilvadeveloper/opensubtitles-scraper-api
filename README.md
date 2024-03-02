@@ -28,4 +28,4 @@ You can customize the behavior of the API by modifying the `utils.py` file:
 
 ## License
 
-[MIT]([www.google.com](https://github.com/tiagosilvadeveloper/opensubtitles-scrapper/blob/main/LICENSE))
+([MIT](https://github.com/tiagosilvadeveloper/opensubtitles-scrapper/blob/main/LICENSE))

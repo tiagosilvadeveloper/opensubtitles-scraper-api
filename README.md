@@ -4,7 +4,7 @@ This repository contains a Python script for scraping subtitles from OpenSubtitl
 
 ## Features
 
-- Search for movie and TV show subtitles.
+- Search for movie and TV show subtitles and get a JSON structured response.
 - Customize the language code, number of subtitles fetched, and subtitle name via `utils.py`.
 
 ## Usage

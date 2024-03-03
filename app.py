@@ -54,9 +54,9 @@ def get_download_link(session, url):
     return None
 
 
-def get_subtitles_tv(session, season, episode, title, max_subtitles):
+def get_subtitles_tv(session, season, episode, title, year, max_subtitles):
   cleaned_title = title.replace('-', '+')
-  url = f"https://www.opensubtitles.org/en/search/sublanguageid-{language_code}/season-{season}/episode-{episode}/fixinput-on/moviename-{cleaned_title}/sort-7/asc-0"
+  url = f"https://www.opensubtitles.org/en/search/sublanguageid-{language_code}/searchonlytvseries-on/season-{season}/episode-{episode}/fixinput-on/movieyearsign-5/movieyear-{year}//moviename-{cleaned_title}/sort-7/asc-0"
   response = session.get(url)
   soup = BeautifulSoup(response.text, 'html.parser')
   links = soup.select('a[href^="/en/subtitles/"]')
@@ -75,14 +75,10 @@ def get_subtitles_tv(session, season, episode, title, max_subtitles):
   return subtitles
 
 
-@app.route('/opensubs/tv/<title>/<season>/<episode>')
-def fetch_subtitlestv(season, episode, title):
+@app.route('/opensubs/tv/<title>/<year>/<season>/<episode>')
+def fetch_subtitlestv(season, episode, title, year):
   with requests.Session() as s:
-    subtitles = get_subtitles_tv(s,
-                                 season,
-                                 episode,
-                                 title,
-                                 max_subtitles=subtitles_number)
+    subtitles = get_subtitles_tv(s, season, episode, title, year, max_subtitles=subtitles_number)
   return jsonify({"subtitles": subtitles})
 
 

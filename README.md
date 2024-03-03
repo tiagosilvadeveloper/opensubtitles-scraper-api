@@ -13,8 +13,8 @@ Deploy this repository directly on Vercel by clicking here: [![Deploy with Verce
 
 Once deployed, you can use the following endpoints:
 
-- For movies: `{https://myapi.vercel.com}/opensubs/movie/{title}/{year}/`
-- For TV shows: `{https://myapi.vercel.com}/opensubs/tv/{title}/{seasonNumber}/{episodeNumber}/`
+- For movies: `{https://myapi.vercel.com}/opensubs/movie/{title}/{year}`
+- For TV shows: `{https://myapi.vercel.com}/opensubs/tv/{title}/{seasonNumber}/{episodeNumber}`
 
 Replace `{https://myapi.vercel.com}`, `{title}`, `{year}`, `{seasonNumber}`, and `{episodeNumber}` with your desired parameters.
 

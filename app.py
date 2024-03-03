@@ -62,16 +62,22 @@ def get_subtitles_tv(session, season, episode, title, year, max_subtitles):
   links = soup.select('a[href^="/en/subtitles/"]')
 
   subtitles = []
-  for link in links[:max_subtitles]:
-    subtitle_url = f"https://www.opensubtitles.org{link['href']}"
-    download_link = get_download_link(session, subtitle_url)
-    if download_link:
-      subtitles.append({
-          'url':
-          download_link,
-          'lang':
-          f'OpenSubtitles: {subtitle_name} {len(subtitles) + 1}'
-      })
+  if links:
+      for link in links[:max_subtitles]:
+          subtitle_url = f"https://www.opensubtitles.org{link['href']}"
+          download_link = get_download_link(session, subtitle_url)
+          if download_link:
+              subtitles.append({
+                  'url': download_link,
+                  'lang': f'{subtitle_name} {len(subtitles) + 1}'
+              })
+  else:
+      download_link = get_download_link(session, url)
+      if download_link:
+          subtitles.append({
+              'url': download_link,
+              'lang': f'{subtitle_name} {len(subtitles) + 1}'
+          })
   return subtitles
 
 

@@ -13,8 +13,10 @@ Deploy this repository directly on Vercel by clicking here: [![Deploy with Verce
 
 Once deployed, you can use the following endpoints:
 
-- For movies: `{https://myapi.vercel.com}/movie/{title}/{year}` (e.g. [https://opensubtitles-scrapper.vercel.app/movie/Interstellar/2014](https://opensubtitles-scrapper.vercel.app/movie/Interstellar/2014))
-- For TV shows: `{https://myapi.vercel.com}/tv/{title}/{year}/{seasonNumber}/{episodeNumber}` (e.g. [https://opensubtitles-scrapper.vercel.app/tv/The%20Last%20of%20Us/2023/1/5](https://opensubtitles-scrapper.vercel.app/tv/The%20Last%20of%20Us/2023/1/5))
+- For movies: `{https://myapi.vercel.com}/movie/{title}/{year}`
+> (e.g. [https://opensubtitles-scrapper.vercel.app/movie/Interstellar/2014](https://opensubtitles-scrapper.vercel.app/movie/Interstellar/2014))
+- For TV shows: `{https://myapi.vercel.com}/tv/{title}/{year}/{seasonNumber}/{episodeNumber}`
+> (e.g. [https://opensubtitles-scrapper.vercel.app/tv/The%20Last%20of%20Us/2023/1/5](https://opensubtitles-scrapper.vercel.app/tv/The%20Last%20of%20Us/2023/1/5))
 
 Replace `{https://myapi.vercel.com}`, `{title}`, `{year}`, `{seasonNumber}`, and `{episodeNumber}` with your desired parameters.
 

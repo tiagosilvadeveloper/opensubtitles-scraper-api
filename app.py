@@ -95,5 +95,10 @@ def fetch_subtitles(title, year):
   return jsonify({"subtitles": subtitles})
 
 
+@app.route('/')
+def welcome():
+    return "Welcome to the OpenSubtitles Scraper API"
+
+
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=8080)

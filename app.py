@@ -81,14 +81,14 @@ def get_subtitles_tv(session, season, episode, title, year, max_subtitles):
   return subtitles
 
 
-@app.route('/opensubs/tv/<title>/<year>/<season>/<episode>')
+@app.route('/tv/<title>/<year>/<season>/<episode>')
 def fetch_subtitlestv(season, episode, title, year):
   with requests.Session() as s:
     subtitles = get_subtitles_tv(s, season, episode, title, year, max_subtitles=subtitles_number)
   return jsonify({"subtitles": subtitles})
 
 
-@app.route('/opensubs/movie/<title>/<year>')
+@app.route('/movie/<title>/<year>')
 def fetch_subtitles(title, year):
   with requests.Session() as s:
     subtitles = get_subtitles(s, title, year, max_subtitles=subtitles_number)

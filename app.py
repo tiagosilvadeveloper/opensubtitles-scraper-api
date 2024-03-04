@@ -34,7 +34,7 @@ def get_subtitles(session, title, year, max_subtitles):
           'url':
           download_link,
           'lang':
-          f'OpenSubtitles: {subtitle_name} {len(subtitles) + 1}'
+          f'{subtitle_name} {len(subtitles) + 1}'
       })
   return subtitles
 

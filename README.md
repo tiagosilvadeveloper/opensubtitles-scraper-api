@@ -1,4 +1,4 @@
-# OpenSubtitles Scraper
+# OpenSubtitles Scraper API
 
 This repository contains a Python script for scraping subtitles from OpenSubtitles.org. It is designed to be deployed as an API on Vercel.
 
@@ -9,14 +9,14 @@ This repository contains a Python script for scraping subtitles from OpenSubtitl
 
 ## Usage
 
-Deploy this repository directly on Vercel by clicking here: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftiagosilvadeveloper%2Fopensubtitles-scrapper)
+Deploy this repository directly on Vercel by clicking here: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftiagosilvadeveloper%2Fopensubtitles-scraper-api)
 
 Once deployed, you can use the following endpoints:
 
 - For movies: `{https://myapi.vercel.com}/movie/{title}/{year}`
-> (e.g. [https://opensubtitles-scrapper.vercel.app/movie/Interstellar/2014](https://opensubtitles-scrapper.vercel.app/movie/Interstellar/2014))
+> (e.g. [https://opensubtitles-scraper-api.vercel.app/movie/Interstellar/2014](https://opensubtitles-scraper-api.vercel.app/movie/Interstellar/2014))
 - For TV shows: `{https://myapi.vercel.com}/tv/{title}/{year}/{seasonNumber}/{episodeNumber}`
-> (e.g. [https://opensubtitles-scrapper.vercel.app/tv/The-Last-of-Us/2023/1/5](https://opensubtitles-scrapper.vercel.app/tv/The%20Last%20of%20Us/2023/1/5))
+> (e.g. [https://opensubtitles-scraper-api.vercel.app/tv/The-Last-of-Us/2023/1/5](https://opensubtitles-scraper-api.vercel.app/tv/The%20Last%20of%20Us/2023/1/5))
 
 Replace `{https://myapi.vercel.com}`, `{title}`, `{year}`, `{seasonNumber}`, and `{episodeNumber}` with your desired parameters.
 
